@@ -16,7 +16,7 @@ on:
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: gke-demo-dev
-  GKE_ZONE: us-central1-a
+  GKE_ZONE: us-central1
   DEPLOYMENT_NAME: gke-hello-app
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
