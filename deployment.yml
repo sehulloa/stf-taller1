@@ -2,7 +2,6 @@ apiVersion: "apps/v1"
 kind: Deployment
 metadata:
   name: gke-hello-app
-  namespace: "development"
 spec:
   replicas: 2
   selector:
@@ -37,7 +36,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    port: 80
+  - port: 80
     targetPort: 8080
   selector:
     app: gke-hello-app
